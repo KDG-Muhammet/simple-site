@@ -1,0 +1,40 @@
+HTML check 
+Error: End of file seen without seeing a doctype first. Expected “<!DOCTYPE html>”.
+file:/C:/UI1_GIT/./examenproject/html/project.html
+Error: Element “head” is missing a required instance of child element “title”.
+file:/C:/UI1_GIT/./examenproject/html/project.html
+Warning: Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
+file:/C:/UI1_GIT/./examenproject/html/project.html
+Warning: This document appears to be written in Nederlands but the “html” start tag has “lang="en"”. Consider using “lang="nl"” (or variant) instead.
+From line 1, column 16; to line 2, column 16 in resource file:/C:/UI1_GIT/./examenproject/index.html
+Error: Bad value “Verspreiding en leefgebied.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 14, column 17; to line 14, column 58 in resource file:/C:/UI1_GIT/./groeiproject/html/Bedreiging.html
+Error: Bad value “Voedsel en gedrag.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 15, column 17; to line 15, column 49 in resource file:/C:/UI1_GIT/./groeiproject/html/Bedreiging.html
+Error: End of file seen without seeing a doctype first. Expected “<!DOCTYPE html>”.
+file:/C:/UI1_GIT/./groeiproject/html/dier.html
+Error: Element “head” is missing a required instance of child element “title”.
+file:/C:/UI1_GIT/./groeiproject/html/dier.html
+Warning: Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
+file:/C:/UI1_GIT/./groeiproject/html/dier.html
+Error: Bad value “Verspreiding en leefgebied.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 18, column 21; to line 18, column 62 in resource file:/C:/UI1_GIT/./groeiproject/html/Kenmerken.html
+Error: Bad value “Voedsel en gedrag.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 19, column 21; to line 19, column 53 in resource file:/C:/UI1_GIT/./groeiproject/html/Kenmerken.html
+Error: The “main” element must not appear as a descendant of the “section” element.
+From line 24, column 5; to line 24, column 10 in resource file:/C:/UI1_GIT/./groeiproject/html/Kenmerken.html
+Error: Bad value “Verspreiding en leefgebied.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 14, column 17; to line 14, column 58 in resource file:/C:/UI1_GIT/./groeiproject/html/Verspreiding%20en%20leefgebied.html
+Error: Bad value “Voedsel en gedrag.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 15, column 17; to line 15, column 49 in resource file:/C:/UI1_GIT/./groeiproject/html/Verspreiding%20en%20leefgebied.html
+Error: Bad value “Verspreiding en leefgebied.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 14, column 17; to line 14, column 58 in resource file:/C:/UI1_GIT/./groeiproject/html/Voedsel%20en%20gedrag.html
+Error: Bad value “Voedsel en gedrag.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
+From line 15, column 17; to line 15, column 49 in resource file:/C:/UI1_GIT/./groeiproject/html/Voedsel%20en%20gedrag.html
+Error: Bad value “303,5” for attribute “height” on element “img”: Expected a digit but saw “,” instead.
+From line 22, column 5; to line 22, column 97 in resource file:/C:/UI1_GIT/./groeiproject/index.html
+Error: Bad value “400,68,51,201” for attribute “coords” on element “area”: The first integer must be less than the third.
+From line 24, column 9; to line 24, column 159 in resource file:/C:/UI1_GIT/./groeiproject/index.html
+Warning: Section lacks heading. Consider using “h2”-“h6” elements to add identifying headings to all sections.
+From line 21, column 5; to line 21, column 13 in resource file:/C:/UI1_GIT/./groeiproject/index.html
+Document checking completed.

@@ -5,8 +5,6 @@ Error: Element “head” is missing a required instance of child element “tit
 file:/C:/UI1_GIT/./examenproject/html/project.html
 Warning: Consider adding a “lang” attribute to the “html” start tag to declare the language of this document.
 file:/C:/UI1_GIT/./examenproject/html/project.html
-Warning: This document appears to be written in Nederlands but the “html” start tag has “lang="en"”. Consider using “lang="nl"” (or variant) instead.
-From line 1, column 16; to line 2, column 16 in resource file:/C:/UI1_GIT/./examenproject/index.html
 Error: Bad value “Verspreiding en leefgebied.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.
 From line 14, column 17; to line 14, column 58 in resource file:/C:/UI1_GIT/./groeiproject/html/Bedreiging.html
 Error: Bad value “Voedsel en gedrag.html” for attribute “href” on element “a”: Illegal character in path segment: space is not allowed.

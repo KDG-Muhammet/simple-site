@@ -1,0 +1,48 @@
+
+h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+nav{
+    border-bottom-color: black;
+    border-top-color: black ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslategray;
+    color: white;
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a {
+    color: black;
+    border-radius: 5px;
+    text-decoration: white;
+    font-weight: 1000;
+    margin-inline-end: 12.7em;
+    background-color: lightsteelblue;
+
+}
+
+nav ul li a:hover {
+    background-color: red;
+    color: white;
+}
+
+header{
+
+}
+.row{
+    display: flex;
+}
+.column{
+    display: inline-block;
+    padding: 5px;
+
+}

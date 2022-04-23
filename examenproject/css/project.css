@@ -1,5 +1,5 @@
-
-h1 {
+/*algemenen code*/
+.verborgen {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -7,42 +7,482 @@ h1 {
     left: -10000px;
 }
 
-nav{
-    border-bottom-color: black;
-    border-top-color: black ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: darkslategray;
-    color: white;
-}
-nav li {
-    list-style-type: none;
-    display: inline-block;
-}
-nav ul li a {
-    color: black;
-    border-radius: 5px;
-    text-decoration: white;
-    font-weight: 1000;
-    margin-inline-end: 12.7em;
-    background-color: lightsteelblue;
-
-}
-
-nav ul li a:hover {
-    background-color: red;
-    color: white;
-}
-
-header{
-
-}
-.row{
-    display: flex;
-}
-.column{
-    display: inline-block;
+.panel {
     padding: 5px;
+    border-radius: 5px;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    'gheader gheader'
+    'gmain gmain';
+
+    grid-template-columns: 1fr 1fr;
+    height: 97vh;
+    grid-template-rows: 1fr 12fr;
+}
+
+.grid-header {
+    grid-area: gheader;
+    background-color: black;
+    text-align: center;
+
+}
+
+.grid-main {
+    grid-area: gmain;
+    background-color: gray;
+    padding-bottom: 10px;
+}
+
+body {
+    margin: auto;
+    width: 99%;
+
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 40px;
+}
+
+nav ul li a {
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightskyblue;
+
+}
+
+.submenu ul {
+    display: none;
+}
+
+.submenu:hover ul {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.submenu ul {
+    position: absolute;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.submenu ul li {
+    padding: 1px 10px 5px 0;
+    width: 50%;
+}
+
+.current {
+    color: lightskyblue;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    border: 5px solid darkgrey;
+}
+
+/*index*/
+.flex1 {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 510px;
+    padding: 18px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.flex2 {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 510px;
+    padding: 18px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.flex3 {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 510px;
+    padding: 18px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.index-grid {
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-areas:
+    'gheader gheader gheader'
+    'gmain gmain gmain';
+
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 97vh;
+    grid-template-rows: 1fr 12fr;
+}
+
+.index-header {
+    grid-area: gheader;
+    background-color: black;
+    text-align: center;
+}
+
+.index-main {
+    display: grid;
+    grid-area: gmain;
+    background-color: gray;
+    padding-bottom: 10px;
+}
+
+/* hier komt product detail pagaina*/
+.breadcrumbs {
+    border-radius: 0.3rem;
+    display: inline-flex;
+}
+
+.breadcrumbs__item {
+    background: black;
+    color: white;
+    outline: none;
+    padding: 5px 5px 1px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: background 0.2s linear;
+    font-weight: bold;
+}
+
+.breadcrumbs__item:hover:after,
+.breadcrumbs__item:hover {
+    background: white;
+}
+
+.breadcrumbs__item:after,
+.breadcrumbs__item:before {
+    background: black;
+    bottom: 0;
+    clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transition: background 0.2s linear;
+    width: 1em;
+    z-index: 1;
+}
+
+.breadcrumbs__item:before {
+    background: white;
+    margin-left: 1px;
+}
+
+.detail {
+    display: inline-flex;
+    flex-direction: row;
+    height: 500px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+}
+
+.eigenschappen {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 15em;
+}
+
+.detail h2 {
+    position: fixed;
+    bottom: 2em;
+}
+
+/*FAO*/
+dl {
+    text-align: center;
+}
+
+dt {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+dd {
+    min-height: 2em;
+    margin-right: 19em;
+    margin-left: 19em;
+
+}
+
+/*contact*/
+.contactgegevens {
+    display: grid;
+    text-align: center;
+}
+
+.contactgegevens h2 {
+    grid-column: span 2;
+}
+
+#naam {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+#email {
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#telefoon {
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+#adres {
+    grid-row: span 5;
+}
+
+.contactgegevens section img {
+    max-height: 400px;
+}
+
+/*formulier*/
+#formulier {
+    max-width: 50em;
+    margin: 10px auto;
+
+}
+
+#formulier label {
+    display: inline-block;
+    width: 500px;
+    margin-top: 10px;
+}
+
+/*producten*/
+.column {
+    display: inline-block;
+    padding: 0;
+}
+
+.column p {
+    background-color: white;
+    font-size: 80%;
+    margin: 0;
+}
+
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;*/
+    padding: 3px;
+    text-align: center;
+    max-width: 175px;
+
+}
+
+.card img {
+    max-width: 90px;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.row h4 {
+    background-color: white;
+    font-size: 80%;
+    margin: 0;
+}
+
+.producten h3 {
+    margin: 0;
+}
+
+/*filter voor type*/
+input[type="radio"][id="normaal"]:checked ~ section .ergonomic,
+input[type="radio"][id="normaal"]:checked ~ section .opvouwbaar {
+    display: none;
+}
+
+input[type="radio"][id="opvouwbaar"]:checked ~ section .ergonomic,
+input[type="radio"][id="opvouwbaar"]:checked ~ section .normaal {
+    display: none;
+}
+
+input[type="radio"][id="ergonomic"]:checked ~ section .normaal,
+input[type="radio"][id="ergonomic"]:checked ~ section .opvouwbaar {
+    display: none;
+}
+
+/*filter voor grootte*/
+input[type="radio"][id="compact"]:checked ~ section .fullSize {
+    display: none;
+}
+
+input[type="radio"][id="full\ size"]:checked ~ section .compact {
+    display: none;
+}
+
+/*filter voor lichten*/
+input[type="radio"][id="RBG"]:checked ~ section .blauwe,
+input[type="radio"][id="RBG"]:checked ~ section .groene,
+input[type="radio"][id="RBG"]:checked ~ section .rode,
+input[type="radio"][id="RBG"]:checked ~ section .geenLichten {
+    display: none;
+}
+
+input[type="radio"][id="blauwe"]:checked ~ section .RBG,
+input[type="radio"][id="blauwe"]:checked ~ section .groene,
+input[type="radio"][id="blauwe"]:checked ~ section .rode,
+input[type="radio"][id="blauwe"]:checked ~ section .geenLichten {
+    display: none;
+}
+
+input[type="radio"][id="groene"]:checked ~ section .blauwe,
+input[type="radio"][id="groene"]:checked ~ section .RBG,
+input[type="radio"][id="groene"]:checked ~ section .rode,
+input[type="radio"][id="groene"]:checked ~ section .geenLichten {
+    display: none;
+}
+
+input[type="radio"][id="rode"]:checked ~ section .blauwe,
+input[type="radio"][id="rode"]:checked ~ section .groene,
+input[type="radio"][id="rode"]:checked ~ section .RBG,
+input[type="radio"][id="rode"]:checked ~ section .geenLichten {
+    display: none;
+}
+
+input[type="radio"][id="geen lichten"]:checked ~ section .blauwe,
+input[type="radio"][id="geen lichten"]:checked ~ section .groene,
+input[type="radio"][id="geen lichten"]:checked ~ section .rode,
+input[type="radio"][id="geen lichten"]:checked ~ section .RBG {
+    display: none;
+}
+
+/*filter opmaak */
+.producten input {
+    display: none;
+}
+
+#reset {
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: black;
+    color: white;
+}
+
+.producten label {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    background-color: white;
+}
+
+.producten label:hover {
+    background-color: black;
+    color: white;
+}
+
+#opvouwbaar:checked ~ #filter .opvouwbaarLabel {
+    background-color: black;
+    color: white;
+}
+
+#ergonomic:checked ~ #filter .ergonomicLabel {
+    background-color: black;
+    color: white;
+}
+
+#normaal:checked ~ #filter .normaalLabel {
+    background-color: black;
+    color: white;
+}
+
+#compact:checked ~ #filter .compactLabel {
+    background-color: black;
+    color: white;
+}
+
+#full\ size:checked ~ #filter .fullSizeLabel {
+    background-color: black;
+    color: white;
+}
+
+#RBG:checked ~ #filter .RBGlabel {
+    background-color: black;
+    color: white;
+}
+
+#blauwe:checked ~ #filter .blauweLabel {
+    background-color: black;
+    color: white;
+}
+
+#groene:checked ~ #filter .groeneLabel {
+    background-color: black;
+    color: white;
+}
+
+#rode:checked ~ #filter .rodeLabel {
+    background-color: black;
+    color: white;
+}
+
+#geen\ lichten:checked ~ #filter .geenLichtenLabel {
+    background-color: black;
+    color: white;
+}
+
+#filter {
+    float: right;
+    display: inline-block;
+    border: 5px solid black;
+    padding: 3px 30px 1px 10px
+}
+
+.filterType {
+    margin: 5px 0 5px 0;
+}
+
+.filtergrootte {
+    margin: 5px 0 5px 0;
+
+}
+
+.filterLichten {
+    margin: 5px 0 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #filter {
+        float: none;
+    }
 }

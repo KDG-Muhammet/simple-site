@@ -3,20 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Personalisering</title>
+    <link rel="stylesheet" href="../css/project.css">
 </head>
-<body>
-<h1>Personalisering Pagina</h1>
-<header>
+<body class="grid">
+<h1 class="verborgen">Personalisering Pagina</h1>
+<header class="grid-header panel">
     <nav>
-        <h2>Menu</h2>
+        <h2 class="verborgen">Menu</h2>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="Producten.html">Producten</a></li>
-            <li><a href="Personalisering.html">Personalisering</a></li>
+            <li><a class="current" href="Personalisering.html">Personalisering</a></li>
             <li><a href="Contact.html">Contact</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
         </ul>
     </nav>
 </header>
+<main class="grid-main panel">
+    <section id="formulier">
+        <h2>formulier</h2>
+        <form action="Bevestiging.html" method="get">
+            <fieldset>
+                <legend>gegevens</legend>
+                <label for="naam">vul je naam in</label>
+                <input type="text" id="naam" placeholder="Muhammet Murat" required>
+                <label for="telefoonnummer">vul je telefoonnummer in</label>
+                <input type="tel" id="telefoonnummer" placeholder="0481548761" pattern="^0?[1-9][0-9]{7,8}$">
+                <label for="email">vul je email in</label>
+                <input type="email" id="email" placeholder="info@gmail.com">
+                <label for="leveringsadres">leveringsadres</label>
+                <input type="text" id="leveringsadres">
+            </fieldset>
+            <fieldset>
+                <legend>product informatie</legend>
+                <label for="kiesJeProduct">kies je product</label>
+                <select name="kies je product" id="kiesJeProduct">
+                    <optgroup label="membrane keyboard">
+                        <option value="Membrane keyboard zwart met RBG lichten">Membrane keyboard zwart met RBG lichten</option>
+                        <option value="Membrane keyboard wit met RBG lichten">Membrane keyboard wit met RBG lichten</option>
+                        <option value="Compact zwart Keyboard">Compact zwart Keyboard</option>
+                        <option value="Ergonomic zwart keyboard">Ergonomic zwart keyboard</option>
+                        <option value="Type machine keyboard">Type machine keyboard</option>
+                        <option value="Keyboard Met Touchpad">Keyboard Met Touchpad</option>
+                        <option value="Opvouwbaar keyboard">Opvouwbaar keyboard</option>
+                        <option value="Silicone Keyboard">Silicone Keyboard</option>
+                    </optgroup>
+                    <optgroup label="mechanical keyboard">
+                        <option value="Compact mechanical keyboard met blauwe lichten">Compact mechanical keyboard met blauwe lichten</option>
+                        <option value="Ergonomic keyboard groen">Ergonomic keyboard groen</option>
+                        <option value="Draadloze Wit Keyboard">Draadloze Wit Keyboard</option>
+                        <option value="Logitech G Wit Keyboard">Logitech G Wit Keyboard</option>
+                        <option value="Metaal Zwart Keyboard met lichten">Metaal Zwart Keyboard met lichten</option>
+                        <option value="Super comfortabel Black Ergonomic Keyboard">Super comfortabel Black Ergonomic Keyboard</option>
+                        <option value="Professional zwart keyboard">Professional zwart keyboard</option>
+                    </optgroup>
+                    <optgroup label="gaming keyboard">
+                        <option value="Razer keyboard mini met RBG lichten">Razer keyboard mini met RBG lichten</option>
+                        <option value="Zwart gaming keyboard met rode lichten">Zwart gaming keyboard met rode lichten</option>
+                        <option value="Draadloze Zwart Keyboard met blauw lichten">Draadloze Zwart Keyboard met blauw lichten</option>
+                        <option value="Full size gaming keyboard">Full size gaming keyboard</option>
+                        <option value="Mini Gaming Keyboard Wit">Mini Gaming Keyboard Wit</option>
+                        <option value="Wit en zwart RBG keyboard">Wit en zwart RBG keyboard</option>
+                    </optgroup>
+                </select>
+                <label for="personalisering">Personalisering</label>
+                <textarea name="personalisering" id="personalisering"></textarea>
+                <label for="kleur">Kleur van toetsenbord knoppen</label>
+                <input type="color" id="kleur">
+                <label for="AZERTY">AZERTY</label>
+                <input type="radio" id="AZERTY" name="layout" value="AZERTY">
+                <label for="QWERTY">QWERTY</label>
+                <input type="radio" id="QWERTY" name="layout" value="QWERTY">
+            </fieldset>
+            <input type="submit" value="Verzenden">
+        </form>
+    </section>
+</main>
 </body>
 </html>

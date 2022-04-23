@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Productdetailpagina</title>
+    <link rel="stylesheet" href="../css/project.css">
 </head>
-<body>
-<h1>productDetail pagina</h1>
-<header>
+<body class="grid">
+<h1 class="verborgen">productDetail pagina</h1>
+<header class="grid-header panel">
     <nav>
-        <h2>Menu</h2>
+        <h2 class="verborgen">Menu</h2>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="Producten.html">Producten</a></li>
@@ -17,21 +18,18 @@
             <li><a href="FAQ.html">FAQ</a></li>
         </ul>
     </nav>
-        <ol>
-            <li><a href=Producten.html>Producten</a></li>
-            <li><a href=productdetailpagina.html>productdetail</a></li>
-        </ol>
+    <ol class="breadcrumbs">
+        <li><a class="breadcrumbs__item" href=Producten.html>Producten</a></li>
+        <li><a class="breadcrumbs__item" href=productdetailpagina.html>productdetail</a></li>
+    </ol>
 </header>
-<main>
-    <section>
-        <h2>Product</h2>
-        <section>
-            <img src="../media/membraneKeyboard/CompactZwartKeyboardHD.jpg" alt="Compact zwart Keyboard">
-            <h3>Compact zwart keyboard </h3>
-            <p>10 euro</p>
-        </section>
-        <section>
+<main class="grid-main panel">
+    <section class="detail">
+        <img src="../media/membraneKeyboard/CompactZwartKeyboardHD.jpg" alt="Compact zwart Keyboard">
+        <h2>Compact zwart keyboard </h2>
+        <section class="eigenschappen">
             <h3>Eigenschappen</h3>
+            <p>10 euro</p>
             <p>lengte is 25 cm op 15cm</p>
             <p>Makkelijk mee te nemen </p>
             <p>het is helemaal van plastic gemaakt</p>
@@ -39,6 +37,5 @@
         </section>
     </section>
 </main>
-
 </body>
 </html>

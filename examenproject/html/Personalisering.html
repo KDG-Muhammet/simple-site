@@ -12,8 +12,12 @@
         <h2 class="verborgen">Menu</h2>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="Producten.html">Producten</a></li>
-            <li><a class="current" href="Personalisering.html">Personalisering</a></li>
+            <li class="submenu"><a class="current" href="Producten.html">Producten</a>
+                <ul>
+                    <li><a href="productendetails/productdetailpagina.html">product</a></li>
+                </ul>
+            </li>
+            <li><a href="Personalisering.html">Personalisering</a></li>
             <li><a href="Contact.html">Contact</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
         </ul>
@@ -21,22 +25,22 @@
 </header>
 <main class="grid-main panel">
     <section id="formulier">
-        <h2>formulier</h2>
+        <h2>Bestel uw unieke toetsenbord</h2>
         <form action="Bevestiging.html" method="get">
-            <fieldset>
-                <legend>gegevens</legend>
-                <label for="naam">vul je naam in</label>
-                <input type="text" id="naam" placeholder="Muhammet Murat" required>
-                <label for="telefoonnummer">vul je telefoonnummer in</label>
-                <input type="tel" id="telefoonnummer" placeholder="0481548761" pattern="^0?[1-9][0-9]{7,8}$">
-                <label for="email">vul je email in</label>
-                <input type="email" id="email" placeholder="info@gmail.com">
-                <label for="leveringsadres">leveringsadres</label>
-                <input type="text" id="leveringsadres">
+            <fieldset class="gegevens">
+                <legend class="legend">gegevens</legend>
+                <label for="naam"  >Naam* en Achternaam*</label>
+                <input type="text" id="naam" name="naam" placeholder="Muhammet Murat" required>
+                <label for="telefoonnummer">Telefoonnummer*</label>
+                <input type="tel" id="telefoonnummer" name="telefoon" placeholder="0481548761" pattern="^0?[1-9][0-9]{7,8}$">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="info@gmail.com">
+                <label for="leveringsadres">Leveringsadres*</label>
+                <input type="text" id="leveringsadres" name="leveringsadres">
             </fieldset>
-            <fieldset>
-                <legend>product informatie</legend>
-                <label for="kiesJeProduct">kies je product</label>
+            <fieldset class="gegevens">
+                <legend class="legend">product informatie</legend>
+                <label for="kiesJeProduct">kies je product*</label>
                 <select name="kies je product" id="kiesJeProduct">
                     <optgroup label="membrane keyboard">
                         <option value="Membrane keyboard zwart met RBG lichten">Membrane keyboard zwart met RBG lichten</option>
@@ -67,13 +71,14 @@
                     </optgroup>
                 </select>
                 <label for="personalisering">Personalisering</label>
-                <textarea name="personalisering" id="personalisering"></textarea>
-                <label for="kleur">Kleur van toetsenbord knoppen</label>
-                <input type="color" id="kleur">
+                <textarea name="personalisering" id="personalisering" placeholder="voor opties die niet in de lijst staan maar u graag wilt kunt u ze hier typen"></textarea>
+                <label for="kleur">Kleur van toetsenbord knoppen*</label>
+                <input type="color" name="kleur" id="kleur">
                 <label for="AZERTY">AZERTY</label>
                 <input type="radio" id="AZERTY" name="layout" value="AZERTY">
                 <label for="QWERTY">QWERTY</label>
                 <input type="radio" id="QWERTY" name="layout" value="QWERTY">
+                <p>Vakken met een * zijn verplicht, geen layout kozen = wordt het standaard AZERTY.</p>
             </fieldset>
             <input type="submit" value="Verzenden">
         </form>

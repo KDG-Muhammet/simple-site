@@ -12,12 +12,12 @@
         <h2 class="verborgen">Menu</h2>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li class="submenu"><a class="current" href="Producten.html">Producten</a>
+            <li class="submenu"><a href="Producten.html">Producten</a>
                 <ul>
                     <li><a href="productendetails/productdetailpagina.html">product</a></li>
                 </ul>
             </li>
-            <li><a href="Personalisering.html">Personalisering</a></li>
+            <li><a class="current" href="Personalisering.html">Personalisering</a></li>
             <li><a href="Contact.html">Contact</a></li>
             <li><a href="FAQ.html">FAQ</a></li>
         </ul>
@@ -27,18 +27,24 @@
     <section id="formulier">
         <h2>Bestel uw unieke toetsenbord</h2>
         <form action="Bevestiging.html" method="get">
-            <fieldset class="gegevens">
+            <fieldset class="gegevensPersoon">
                 <legend class="legend">gegevens</legend>
                 <label for="naam"  >Naam* en Achternaam*</label>
                 <input type="text" id="naam" name="naam" placeholder="Muhammet Murat" required>
                 <label for="telefoonnummer">Telefoonnummer*</label>
-                <input type="tel" id="telefoonnummer" name="telefoon" placeholder="0481548761" pattern="^0?[1-9][0-9]{7,8}$">
+                <input type="tel" id="telefoonnummer" name="telefoon" placeholder="0481548761" pattern="^0?[1-9][0-9]{7,8}$" required>
                 <label for="email">Email*</label>
-                <input type="email" id="email" name="email" placeholder="info@gmail.com">
+                <input type="email" id="email" name="email" placeholder="info@gmail.com" required>
+                <label for="Land">Land*</label>
+                <input type="text" id="Land" name="Land" placeholder="belgie" required>
                 <label for="leveringsadres">Leveringsadres*</label>
-                <input type="text" id="leveringsadres" name="leveringsadres">
+                <input type="text" id="leveringsadres" name="leveringsadres" placeholder="staartnaam nr postcode" required>
+                <label for="datum">Leveringsdatum*</label>
+                <input type="date" id="datum" name="Leveringsdatum" required>
+                <label for="afhalen">Afhalen</label>
+                <input type="checkbox" id="afhalen" name="Afhalen">
             </fieldset>
-            <fieldset class="gegevens">
+            <fieldset class="gegevensProduct">
                 <legend class="legend">product informatie</legend>
                 <label for="kiesJeProduct">kies je product*</label>
                 <select name="kies je product" id="kiesJeProduct">

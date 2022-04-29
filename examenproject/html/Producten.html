@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Kenmerken</title>
+    <title>Producten</title>
     <link rel="stylesheet" href="../css/project.css">
 </head>
 <body class="grid">
@@ -36,7 +36,10 @@
             <input type="radio" id="blauwe" name="Lichten" value="blauwe" class="blauwe">
             <input type="radio" id="groene" name="Lichten" value="groene" class="groene">
             <input type="radio" id="rode" name="Lichten" value="rode" class="rode">
-            <input type="radio" id="geenLichten" name="Lichten" value="geen lichten" class="geen lichten">
+            <input type="radio" id="geenLichten" name="Lichten" value="geen lichten" class="geenLichten">
+            <input type="radio" id="resetType" name="type" value="resetType" class="resetType">
+            <input type="radio" id="resetGrootte" name="grootte" value="resetGrootte" class="resetGrootte">
+            <input type="radio" id="resetLichten" name="Lichten" value="resetLichten" class="resetLichten">
             <section id="filter">
                 <h3>filter</h3>
                 <section>
@@ -45,11 +48,13 @@
                     <label for="ergonomic" class="ergonomicLabel">ergonomic</label>
                     <label for="opvouwbaar" class="opvouwbaarLabel">opvouwbaar</label>
                     <label for="normaal" class="normaalLabel">normaal</label>
+                    <label for="resetType" class="resetTypeLabel">reset type</label>
                 </section>
                 <section>
                     <h4 class="filtergrootte">grootte</h4>
                     <label for="compact" class="compactLabel">compact</label>
                     <label for="FullSize" class="fullSizeLabel">full size</label>
+                    <label for="resetGrootte" class="resetGrootteLabel">reset grootte</label>
                 </section>
                 <section>
                     <h4 class="filterLichten">Lichten</h4>
@@ -58,38 +63,39 @@
                     <label for="groene" class="groeneLabel">groene</label>
                     <label for="rode" class="rodeLabel">rode</label>
                     <label for="geenLichten" class="geenLichtenLabel">geen lichten</label>
+                    <label for="resetLichten" class="resetLichtenLabel">reset lichten</label>
                 </section>
             </section>
             <section class="row">
                 <h3 class="h">Membrane keyboards</h3>
-                <section class="column card RBG fullSize normaal">
+                <section class="column card RBG fullSize normaal resetType resetGrootte resetLichten">
                     <a href="productendetails/productdetailpagina.html"><img src="../media/membraneKeyboard/RBGKeyboardZwart.jpg"
                                                                              alt="Membrane keyboard zwart met RBG lichten"></a>
                     <h4>Membrane keyboard zwart met RBG lichten</h4>
                     <p>19,<sup>99</sup>euro</p>
                 </section>
-                <section class="column card RBG fullSize normaal">
+                <section class="column card RBG fullSize normaal resetType resetGrootte resetLichten">
                     <a href="productendetails/RBGKeyboardWit.html"><img src="../media/membraneKeyboard/RBGKeyboardWit.jpg"
                                                                         alt="Membrane keyboard wit met RBG lichten"></a>
                     <h4>Membrane keyboard wit met RBG lichten</h4>
                     <p>24,<sup>99</sup>euro</p>
                 </section>
 
-                <section class="column card compact geenLichten normaal">
+                <section class="column card compact geenLichten normaal resetType resetGrootte resetLichten">
                     <a href="productendetails/CompactZwartKeyboard.html"><img src="../media/membraneKeyboard/CompactZwartKeyboard.jpg"
                                                                               alt="Compact zwart Keyboard"></a>
                     <h4>Compact zwart Keyboard</h4>
                     <p>10 euro</p>
                 </section>
 
-                <section class="column card ergonomic geenLichten fullSize">
+                <section class="column card ergonomic geenLichten fullSize resetType resetGrootte resetLichten">
                     <a href="productendetails/ErgonomicZwartKeyboard.html"><img src="../media/membraneKeyboard/ErgonomicZwartKeyboard.jpg"
                                                                                 alt="Ergonomic zwart keyboard"></a>
                     <h4>Ergonomic zwart keyboard</h4>
                     <p>19,<sup>99</sup>euro</p>
                 </section>
 
-                <section class="column card fullSize geenLichten normaal">
+                <section class="column card fullSize geenLichten normaal resetType resetGrootte resetLichten">
                     <a href="productendetails/TypeMachineStijlWitKeyboard.html"><img
                             src="../media/membraneKeyboard/TypeMachineStijlWitKeyboard.jpg"
                             alt="Type machine stijl wit keyboard"></a>
@@ -97,19 +103,19 @@
                     <p>30 euro</p>
                 </section >
 
-                <section class="column card normaal fullSize geenLichten">
+                <section class="column card normaal fullSize geenLichten resetType resetGrootte resetLichten">
                     <img src="../media/membraneKeyboard/KeyboardMetTouchpad.jpg" alt="Keyboard Met Touchpad">
                     <h4>Keyboard Met Touchpad</h4>
                     <p>40 euro</p>
                 </section>
 
-                <section class="column card opvouwbaar fullSize geenLichten">
+                <section class="column card opvouwbaar fullSize geenLichten resetType resetGrootte resetLichten">
                     <img src="../media/membraneKeyboard/OpvouwbaarKeyboard.jpg" alt="Opvouwbaar Keyboard">
                     <h4>Opvouwbaar keyboard</h4>
                     <p>35 euro</p>
                 </section>
 
-                <section class="column card opvouwbaar fullSize geenLichten">
+                <section class="column card opvouwbaar fullSize geenLichten resetType resetGrootte resetLichten">
                     <img src="../media/membraneKeyboard/SiliconeKeyboard.jpg" alt="Silicone Keyboard">
                     <h4>Silicone Keyboard</h4>
                     <p>4,<sup>99</sup>euro</p>

@@ -40,7 +40,6 @@
 .grid-main {
     grid-area: gmain;
     background-color: gray;
-    margin: 0 auto;
     padding: 5px 0 0 5px;
     border-radius: 5px;
 }
@@ -289,6 +288,7 @@ dd {
 /*formulier*/
 #formulier {
     max-width: 50em;
+    margin: 50px auto auto auto;
 }
 
 .gegevensPersoon {
@@ -416,18 +416,22 @@ input[type="radio"][id="geenLichten"]:checked ~ section .RBG {
     display: none;
 }
 
-input[type="radio"][id="resetType"]:checked ~ section .normaal,
-input[type="radio"][id="resetType"]:checked ~ section .ergonomic,
-input[type="radio"][id="resetType"]:checked ~ section .opvouwbaar {
+input[type="radio"][id="resetType"]:checked section .normaal,
+input[type="radio"][id="resetType"]:checked section .ergonomic,
+input[type="radio"][id="resetType"]:checked section .opvouwbaar {
     display: inline-block;
 }
 
-input[type="radio"][id="resetGrootte"]:checked ~ section .fullSize,
-input[type="radio"][id="resetGrootte"]:checked ~ section .compact {
+input[type="radio"][id="resetGrootte"]:checked section .fullSize,
+input[type="radio"][id="resetGrootte"]:checked section .compact {
     display: inline-block;
 }
 
-input[type="radio"][id="resetLichten"]:checked ~ section .resetLichten {
+input[type="radio"][id="resetLichten"]:checked section .RBG,
+input[type="radio"][id="resetLichten"]:checked section .blauwe,
+input[type="radio"][id="resetLichten"]:checked section .groene,
+input[type="radio"][id="resetLichten"]:checked section .rode,
+input[type="radio"][id="resetLichten"]:checked section .geenLichten{
     display: inline-block;
 }
 
@@ -442,92 +446,94 @@ input[type="radio"][id="resetLichten"]:checked ~ section .resetLichten {
 }
 
 #reset:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .producten label {
     border: 1px solid black;
     border-radius: 5px;
     padding: 0 5px 0 5px;
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 .producten label:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #resetType:checked ~ #filter .resetTypeLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #resetGrootte:checked ~ #filter .resetGrootteLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #resetLichten:checked ~ #filter .resetLichtenLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #opvouwbaar:checked ~ #filter .opvouwbaarLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #ergonomic:checked ~ #filter .ergonomicLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #normaal:checked ~ #filter .normaalLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #compact:checked ~ #filter .compactLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #FullSize:checked ~ #filter .fullSizeLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #RBG:checked ~ #filter .RBGlabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #blauwe:checked ~ #filter .blauweLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #groene:checked ~ #filter .groeneLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #rode:checked ~ #filter .rodeLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #geenLichten:checked ~ #filter .geenLichtenLabel {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #filter {
     float: right;
     display: inline-block;
     border: 5px solid black;
-    padding: 3px 30px 1px 10px
+    padding: 3px 30px 1px 10px;
+    color: white;
 }
 
 .filterType {

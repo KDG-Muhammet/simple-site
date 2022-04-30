@@ -29,16 +29,19 @@
         <form action="Bevestiging.html" method="get">
             <fieldset class="gegevensPersoon">
                 <legend class="legend">gegevens</legend>
-                <label for="naam"  >Naam* en Achternaam*</label>
-                <input type="text" id="naam" name="naam" placeholder="Muhammet Murat" required>
+                <label for="naam">Naam* en Achternaam*</label>
+                <input type="text" id="naam" name="naam" placeholder="Muhammet Murat" >
+                <span id="naamfout"></span>
                 <label for="telefoonnummer">Telefoonnummer*</label>
-                <input type="tel" id="telefoonnummer" name="telefoon" placeholder="0481548761" pattern="^0?[1-9][0-9]{7,8}$" required>
+                <input type="tel" id="telefoonnummer" name="telefoon" placeholder="0481548761"
+                       pattern="^0?[1-9][0-9]{7,8}$" required>
                 <label for="email">Email*</label>
                 <input type="email" id="email" name="email" placeholder="info@gmail.com" required>
                 <label for="Land">Land*</label>
                 <input type="text" id="Land" name="Land" placeholder="belgie" required>
                 <label for="leveringsadres">Leveringsadres*</label>
-                <input type="text" id="leveringsadres" name="leveringsadres" placeholder="staartnaam nr postcode" required>
+                <input type="text" id="leveringsadres" name="leveringsadres" placeholder="staartnaam nr postcode"
+                       required>
                 <label for="datum">Leveringsdatum*</label>
                 <input type="date" id="datum" name="Leveringsdatum" required>
                 <label for="afhalen">Afhalen</label>
@@ -49,8 +52,11 @@
                 <label for="kiesJeProduct">kies je product*</label>
                 <select name="kies je product" id="kiesJeProduct">
                     <optgroup label="membrane keyboard">
-                        <option value="Membrane keyboard zwart met RBG lichten">Membrane keyboard zwart met RBG lichten</option>
-                        <option value="Membrane keyboard wit met RBG lichten">Membrane keyboard wit met RBG lichten</option>
+                        <option value="Membrane keyboard zwart met RBG lichten">Membrane keyboard zwart met RBG
+                            lichten
+                        </option>
+                        <option value="Membrane keyboard wit met RBG lichten">Membrane keyboard wit met RBG lichten
+                        </option>
                         <option value="Compact zwart Keyboard">Compact zwart Keyboard</option>
                         <option value="Ergonomic zwart keyboard">Ergonomic zwart keyboard</option>
                         <option value="Type machine keyboard">Type machine keyboard</option>
@@ -59,25 +65,33 @@
                         <option value="Silicone Keyboard">Silicone Keyboard</option>
                     </optgroup>
                     <optgroup label="mechanical keyboard">
-                        <option value="Compact mechanical keyboard met blauwe lichten">Compact mechanical keyboard met blauwe lichten</option>
+                        <option value="Compact mechanical keyboard met blauwe lichten">Compact mechanical keyboard met
+                            blauwe lichten
+                        </option>
                         <option value="Ergonomic keyboard groen">Ergonomic keyboard groen</option>
                         <option value="Draadloze Wit Keyboard">Draadloze Wit Keyboard</option>
                         <option value="Logitech G Wit Keyboard">Logitech G Wit Keyboard</option>
                         <option value="Metaal Zwart Keyboard met lichten">Metaal Zwart Keyboard met lichten</option>
-                        <option value="Super comfortabel Black Ergonomic Keyboard">Super comfortabel Black Ergonomic Keyboard</option>
+                        <option value="Super comfortabel Black Ergonomic Keyboard">Super comfortabel Black Ergonomic
+                            Keyboard
+                        </option>
                         <option value="Professional zwart keyboard">Professional zwart keyboard</option>
                     </optgroup>
                     <optgroup label="gaming keyboard">
                         <option value="Razer keyboard mini met RBG lichten">Razer keyboard mini met RBG lichten</option>
-                        <option value="Zwart gaming keyboard met rode lichten">Zwart gaming keyboard met rode lichten</option>
-                        <option value="Draadloze Zwart Keyboard met blauw lichten">Draadloze Zwart Keyboard met blauw lichten</option>
+                        <option value="Zwart gaming keyboard met rode lichten">Zwart gaming keyboard met rode lichten
+                        </option>
+                        <option value="Draadloze Zwart Keyboard met blauw lichten">Draadloze Zwart Keyboard met blauw
+                            lichten
+                        </option>
                         <option value="Full size gaming keyboard">Full size gaming keyboard</option>
                         <option value="Mini Gaming Keyboard Wit">Mini Gaming Keyboard Wit</option>
                         <option value="Wit en zwart RBG keyboard">Wit en zwart RBG keyboard</option>
                     </optgroup>
                 </select>
                 <label for="personalisering">Personalisering</label>
-                <textarea name="personalisering" id="personalisering" placeholder="voor opties die niet in de lijst staan maar u graag wilt kunt u ze hier typen"></textarea>
+                <textarea name="personalisering" id="personalisering"
+                          placeholder="voor opties die niet in de lijst staan maar u graag wilt kunt u ze hier typen"></textarea>
                 <label for="kleur">Kleur van toetsenbord knoppen*</label>
                 <input type="color" name="kleur" id="kleur">
                 <label for="AZERTY">AZERTY</label>

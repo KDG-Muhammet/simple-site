@@ -154,6 +154,7 @@ h2 {
     grid-area: gmain;
     background-color: gray;
     padding-bottom: 10px;
+    justify-content: space-evenly;
 }
 
 /* hier komt product detail pagaina*/
@@ -254,6 +255,8 @@ dd {
     'naam adres'
     'email adres'
     'telefoon adres';
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr;
 }
 
 .contactgegevens h2 {
@@ -274,21 +277,29 @@ dd {
 
 #adres {
     grid-area: adres;
-    width: 100%;
-    height: auto;
+
 }
 
 .contactgegevens section img {
-    max-height: 400px;
-    height: auto;
+    max-height: 39em;
     width: 100%;
+}
+.contactgegevens section {
+    text-align: center;
+    margin: 10px;
+    height: 50%;
+}
+.contactgegevens section p {
+    font-size: 20px;
 
 }
+
 
 /*formulier*/
 #formulier {
     max-width: 50em;
     margin: 50px auto auto auto;
+    font-size: 20px;
 }
 
 .gegevensPersoon {
@@ -309,13 +320,13 @@ dd {
 
 #formulier .gegevensPersoon label {
     display: inline-block;
-    width: 200px;
+    width: 400px;
     margin-top: 10px;
 }
 
 #formulier .gegevensProduct label {
     display: inline-block;
-    width: 400px;
+    width: 600px;
     margin-top: 10px;
 }
 
@@ -340,7 +351,7 @@ dd {
 }
 
 .card img {
-    max-width: 90px;
+    max-width: 160px;
     border: 5px solid black;
     background-color: white;
 }
@@ -352,7 +363,11 @@ dd {
 }
 
 .producten h3 {
-    margin: 0;
+    background-color: #f1f1f1;
+    width: 10em;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 0;
 }
 
 /*filter voor type*/
@@ -533,7 +548,7 @@ input[type="radio"][id="resetLichten"]:checked section .geenLichten{
     display: inline-block;
     border: 5px solid black;
     padding: 3px 30px 1px 10px;
-    color: white;
+    color: black;
 }
 
 .filterType {
@@ -618,6 +633,9 @@ input[type="radio"][id="resetLichten"]:checked section .geenLichten{
     'email'
     'telefoon'
     'adres';
+
+        grid-template-columns: unset;
+        grid-template-rows: unset;
     }
 
     .contactgegevens section img {
@@ -635,6 +653,13 @@ input[type="radio"][id="resetLichten"]:checked section .geenLichten{
 
     .detail-grid img {
         width: 100%;
+    }
+    #formulier .gegevensPersoon label {
+        width: 200px;
+    }
+
+    #formulier .gegevensProduct label {
+        width: 400px;
     }
 
 }

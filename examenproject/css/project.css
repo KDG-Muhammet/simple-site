@@ -56,7 +56,6 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    vertical-align: top;
     padding: 0 40px;
 }
 
@@ -75,21 +74,31 @@ a:hover {
     display: none;
 }
 
+.submenu ul li a:before {
+    content: '+';
+    padding: 5px;
+}
+.submenu ul li a {
+    display: flex;
+}
 .submenu:hover ul {
     display: flex;
     flex-direction: column;
     background-color: black;
+
 }
 
 .submenu ul {
     position: absolute;
     padding: 0;
     border-radius: 5px;
+    width: 100px;
 }
 
 .submenu ul li {
     padding: 1px 10px 5px 0;
     width: 50%;
+
 }
 
 .current {
@@ -206,17 +215,18 @@ h2 {
     grid-gap: 10px;
     width: 100%;
     height: auto;
-
+    justify-content: center;
 
 }
 
 .eigenschappen {
     grid-area: eigenschappen;
+    margin: 40px;
 }
 
 .detail-grid img {
     grid-area: foto;
-    width: 40em;
+    width: 50em;
     height: auto;
     max-width: 100%;
 }
@@ -228,6 +238,7 @@ h2 {
 /*FAO*/
 dl {
     text-align: center;
+    font-size: 20px;
 }
 
 dt {
@@ -236,6 +247,7 @@ dt {
     display: inline-block;
     margin-bottom: 5px;
     margin-top: 5px;
+
 }
 
 dd {
@@ -281,14 +293,16 @@ dd {
 }
 
 .contactgegevens section img {
-    max-height: 39em;
+    max-height: 38em;
     width: 100%;
 }
+
 .contactgegevens section {
     text-align: center;
     margin: 10px;
     height: 50%;
 }
+
 .contactgegevens section p {
     font-size: 20px;
 
@@ -358,8 +372,8 @@ dd {
 
 .row h4 {
     background-color: white;
-    font-size: 80%;
     margin: 0;
+    width: 160px;
 }
 
 .producten h3 {
@@ -446,7 +460,7 @@ input[type="radio"][id="resetLichten"]:checked section .RBG,
 input[type="radio"][id="resetLichten"]:checked section .blauwe,
 input[type="radio"][id="resetLichten"]:checked section .groene,
 input[type="radio"][id="resetLichten"]:checked section .rode,
-input[type="radio"][id="resetLichten"]:checked section .geenLichten{
+input[type="radio"][id="resetLichten"]:checked section .geenLichten {
     display: inline-block;
 }
 
@@ -471,6 +485,7 @@ input[type="radio"][id="resetLichten"]:checked section .geenLichten{
     padding: 0 5px 0 5px;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 
 .producten label:hover {
@@ -654,12 +669,26 @@ input[type="radio"][id="resetLichten"]:checked section .geenLichten{
     .detail-grid img {
         width: 100%;
     }
+
     #formulier .gegevensPersoon label {
         width: 200px;
     }
 
     #formulier .gegevensProduct label {
         width: 400px;
+    }
+
+    .submenu ul {
+        position: absolute;
+        padding: 0;
+        border-radius: 5px;
+        width: 100px;
+    }
+
+    .submenu ul li {
+        padding: 0;
+        width: 50%;
+
     }
 
 }

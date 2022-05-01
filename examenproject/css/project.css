@@ -78,14 +78,20 @@ a:hover {
     content: '+';
     padding: 5px;
 }
+
 .submenu ul li a {
     display: flex;
+    color: black;
 }
+
+.submenu ul li a:hover {
+    color: lightskyblue;
+}
+
 .submenu:hover ul {
     display: flex;
     flex-direction: column;
-    background-color: black;
-
+    background-color: lightgray;
 }
 
 .submenu ul {

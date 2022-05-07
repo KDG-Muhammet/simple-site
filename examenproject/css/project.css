@@ -265,7 +265,6 @@ dd {
 /*contact*/
 .contactgegevens {
     display: grid;
-    text-align: center;
     grid-gap: 10px;
     padding-right: 10px;
     grid-template-areas:
@@ -273,34 +272,44 @@ dd {
     'naam adres'
     'email adres'
     'telefoon adres';
+
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0fr 1fr 1fr 1fr;
 }
 
 .contactgegevens h2 {
     grid-area: h2contactgegevens;
+    margin: 0;
 }
 
 #naam {
     grid-area: naam;
+    padding-left: 100px;
+    margin-right: 0;
 }
 
 #email {
     grid-area: email;
+    padding-left: 100px;
+    margin-right: 0;
+
 }
 
 #telefoon {
     grid-area: telefoon;
+    padding-left: 100px;
+    margin-right: 0;
+
 }
 
 #adres {
     grid-area: adres;
+    margin: 0;
 
 }
 
 .contactgegevens section img {
-    max-height: 38em;
-    width: 100%;
+    width: 60%;
 }
 
 .contactgegevens section {
@@ -350,6 +359,13 @@ dd {
     margin-top: 10px;
 }
 
+span {
+    color: red;
+}
+
+input::before:focus {
+    background-color: yellow;
+}
 
 /*producten*/
 .column {

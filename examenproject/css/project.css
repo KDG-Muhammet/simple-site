@@ -18,7 +18,12 @@ h2 {
     box-sizing: border-box;
 }
 
-/* grid voor contact pagina, FAQ pagina en productoverzicht pagina  */
+body {
+    margin: auto;
+    width: 99%;
+}
+
+/* grid voor contact pagina, FAQ pagina en productoverzicht/detail pagina  */
 .grid {
     display: grid;
     grid-gap: 10px;
@@ -46,12 +51,6 @@ h2 {
     background-color: gray;
     padding: 5px 0 0 5px;
     border-radius: 5px;
-}
-
-body {
-    margin: auto;
-    width: 99%;
-
 }
 
 /*
@@ -130,6 +129,7 @@ aanduiden waar je op de pagina bent
     flex-direction: column;
     max-width: 510px;
     padding: 18px;
+    grid-area: flex1;
     grid-column-start: 1;
     grid-column-end: 2;
 }
@@ -139,6 +139,7 @@ aanduiden waar je op de pagina bent
     flex-direction: column;
     max-width: 510px;
     padding: 18px;
+    grid-area: flex2;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -148,6 +149,7 @@ aanduiden waar je op de pagina bent
     flex-direction: column;
     max-width: 510px;
     padding: 18px;
+    grid-area: flex3;
     grid-column-start: 3;
     grid-column-end: 4;
 }
@@ -176,6 +178,9 @@ aanduiden waar je op de pagina bent
     background-color: gray;
     padding-bottom: 10px;
     justify-content: space-evenly;
+    grid-template-areas:
+    'flex1 flex2 flex3'
+;
 }
 
 /* hier komt product detail pagina*/
@@ -369,6 +374,35 @@ opmaak van de contactgegevens
     display: inline-block;
     width: 600px;
     margin-top: 10px;
+}
+
+/*
+grid voor personaliserings pagina
+ */
+.personalisering-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+    ' gheader gheader gheader'
+    '. gmain . ';
+
+    grid-template-rows: 1fr 12fr;
+}
+
+.personalisering-grid-header {
+    grid-area: gheader;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.personalisering-grid-main {
+    grid-area: gmain;
+    background-color: gray;
+    padding: 5px 0 0 5px;
+    border-radius: 5px;
 }
 
 /*
@@ -631,6 +665,10 @@ filter verandert van kleur wanneer het actief is
 }
 
 @media screen and (max-width: 600px) {
+
+    /*
+    menu verticaal maken
+     */
     nav ul li {
         display: block;
         text-align: center;
@@ -640,6 +678,9 @@ filter verandert van kleur wanneer het actief is
         float: none;
     }
 
+    /*
+     index main grid items onder elkaar laten verschijnen
+     */
     .flex1 {
         display: inline-flex;
         flex-direction: column;
@@ -671,6 +712,9 @@ filter verandert van kleur wanneer het actief is
         grid-column-end: 2;
     }
 
+    /*
+    FAQ links laten verschijnen
+     */
     dl {
         text-align: left;
     }
@@ -687,6 +731,9 @@ filter verandert van kleur wanneer het actief is
         margin: auto;
     }
 
+    /*
+    contactgegevens onder elkaar laten zetten
+     */
     .contactgegevens {
         display: grid;
         text-align: center;
@@ -720,6 +767,9 @@ filter verandert van kleur wanneer het actief is
         width: 100%;
     }
 
+    /*
+    formulier labels
+     */
     #formulier .gegevensPersoon label {
         width: 200px;
     }
@@ -728,6 +778,9 @@ filter verandert van kleur wanneer het actief is
         width: 400px;
     }
 
+    /*
+    submenu naast de menu laten zetten
+     */
     .submenu ul {
         position: absolute;
         padding: 0;

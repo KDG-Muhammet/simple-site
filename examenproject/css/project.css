@@ -375,6 +375,11 @@ opmaak van de contactgegevens
     width: 600px;
     margin-top: 10px;
 }
+#formulier .gegevensPersoon input {
+    display: inline-block;
+    width: 200px;
+    margin-top: 10px;
+}
 
 /*
 grid voor personaliserings pagina
@@ -410,6 +415,8 @@ fout bericht voor M7
  */
 span {
     color: red;
+    display: block;
+    font-size: 80%;
 }
 
 /*

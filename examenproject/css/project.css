@@ -678,9 +678,11 @@ filter verandert van kleur wanneer het actief is
      */
     nav ul li {
         display: block;
-        text-align: center;
+        padding: 0 90px;
     }
-
+    /*
+  submenu naast de menu laten zetten
+   */
     #filter {
         float: none;
     }
@@ -785,20 +787,22 @@ filter verandert van kleur wanneer het actief is
         width: 400px;
     }
 
-    /*
-    submenu naast de menu laten zetten
-     */
-    .submenu ul {
-        position: absolute;
-        padding: 0;
-        border-radius: 5px;
-        width: 100px;
+    #naam {
+        padding-left: 0;
+        margin-right: 0;
     }
 
-    .submenu ul li {
-        padding: 0;
-        width: 50%;
+    #email {
+        padding-left: 0;
+        margin-right: 0;
 
     }
+
+    #telefoon {
+        padding-left: 0;
+        margin-right: 0;
+
+    }
+
 
 }

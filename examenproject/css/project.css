@@ -81,6 +81,10 @@ opmaak voor submenu
  */
 .submenu ul {
     display: none;
+    position: absolute;
+    padding: 0;
+    border-radius: 5px;
+    width: 100px;
 }
 
 .submenu ul li a:before {
@@ -103,11 +107,8 @@ opmaak voor submenu
     background-color: lightgray;
 }
 
-.submenu ul {
-    position: absolute;
-    padding: 0;
-    border-radius: 5px;
-    width: 100px;
+.submenu {
+
 }
 
 .submenu ul li {
@@ -179,8 +180,7 @@ aanduiden waar je op de pagina bent
     padding-bottom: 10px;
     justify-content: space-evenly;
     grid-template-areas:
-    'flex1 flex2 flex3'
-;
+    'flex1 flex2 flex3';
 }
 
 /* hier komt product detail pagina*/
@@ -375,6 +375,7 @@ opmaak van de contactgegevens
     width: 600px;
     margin-top: 10px;
 }
+
 #formulier .gegevensPersoon input {
     display: inline-block;
     width: 200px;
@@ -414,6 +415,22 @@ grid voor personaliserings pagina
 fout bericht voor M7
  */
 span {
+
+}
+
+#naamfout {
+    color: red;
+    display: block;
+    font-size: 80%;
+}
+
+#emailfout {
+    color: red;
+    display: block;
+    font-size: 80%;
+}
+
+#verzendenfout {
     color: red;
     display: block;
     font-size: 80%;
@@ -671,6 +688,17 @@ filter verandert van kleur wanneer het actief is
     color: black;
 }
 
+/*
+bevestings pagina
+ */
+.IngevuldeInformatie {
+    text-align: center;
+}
+
+.IngevuldeInformatie h4 {
+    margin: 10px 0 10px 0;
+}
+
 @media screen and (max-width: 600px) {
 
     /*
@@ -680,6 +708,7 @@ filter verandert van kleur wanneer het actief is
         display: block;
         padding: 0 90px;
     }
+
     /*
   submenu naast de menu laten zetten
    */
@@ -804,5 +833,12 @@ filter verandert van kleur wanneer het actief is
 
     }
 
+}
+
+@media screen and (min-width: 2560px) {
+
+    header {
+        transform: scale(1.5, 1.5);
+    }
 
 }

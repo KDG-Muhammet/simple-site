@@ -13,7 +13,6 @@ function init(){
     let kleur = document.querySelector("#gekozenKleur")
     let layout = document.querySelector("#keyboardLayout")
 
-    personaliering.innerHTML = getParam("personaliering");
     naam.innerHTML = getParam("naam");
     email.innerHTML = getParam("email");
     telefoon.innerHTML = getParam("telefoon");

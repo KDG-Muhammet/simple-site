@@ -833,12 +833,439 @@ bevestings pagina
 
     }
 
+
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 2000px ) {
+    /*
+    main en nav vergroten
+     */
+    .index-main {
+        font-size: 120%;
+    }
 
-    header {
-        transform: scale(1.5, 1.5);
+    nav ul li {
+        font-size: 110%;
+    }
+
+    nav {
+        font-size: 100%;
+    }
+
+    .submenu ul {
+        width: 120px;
+    }
+
+    /*
+    producten
+     */
+    .grid-main {
+        font-size: 120%;
+    }
+
+    /*
+    faq
+     */
+    dl * {
+        font-size: 110%;
+    }
+
+    /*
+    contact
+     */
+    .contactgegevens {
+        font-size: 110%;
+    }
+
+    .contactgegevens section p {
+        font-size: 110%;
+    }
+
+    /*
+    productdetail
+     */
+    .breadcrumbs__item {
+        font-size: 112%;
+    }
+
+    /*
+    personalisering
+     */
+    #formulier .gegevensPersoon {
+        font-size: 160%;
+    }
+
+    input {
+        font-size: 65%;
+    }
+
+    #QWERTY {
+        transform: scale(1.5);
+    }
+
+    #AZERTY {
+        transform: scale(1.5);
+    }
+
+    #personalisering {
+        font-size: 115%;
+    }
+
+    #kiesJeProduct {
+        font-size: 70%;
+    }
+
+    #info {
+        font-size: 55%;
+    }
+
+    #Verzenden {
+        font-size: 70%;
+        width: 7%;
+    }
+
+    .column p {
+        font-size: 80%;
+    }
+
+    .row h4 {
+        width: 250px;
+    }
+
+    /*
+    opmaak voor elk product
+     */
+    .card {
+        padding: 0;
+        max-width: 250px;
+    }
+
+    .card img {
+        max-width: 140px;
+    }
+}
+
+
+/*
+75%
+ */
+@media screen and (min-width: 2300px ) {
+    /*
+    main en nav vergroten
+     */
+    .index-main {
+        font-size: 160%;
+    }
+
+    nav ul li {
+        font-size: 140%;
+    }
+
+    nav {
+        font-size: 100%;
+    }
+
+    .submenu ul {
+        font-size: 80%;
+        width: 150px;
+    }
+
+    /*
+    producten
+     */
+    .grid-main {
+        font-size: 140%;
+    }
+
+    /*
+    faq
+     */
+    dl * {
+        font-size: 140%;
+    }
+
+    /*
+    contact
+     */
+    .contactgegevens {
+        font-size: 110%;
+    }
+
+    .contactgegevens section p {
+        font-size: 105%;
+    }
+
+    /*
+    productdetail
+     */
+    .breadcrumbs__item {
+        font-size: 150%;
+    }
+
+    /*
+    personalisering
+     */
+    #formulier .gegevensPersoon {
+        font-size: 155%;
+    }
+
+    input {
+        font-size: 110%;
+    }
+
+    #personalisering {
+        font-size: 120%;
+    }
+
+    #kiesJeProduct {
+        font-size: 90%;
+    }
+
+    #Verzenden {
+        font-size: 110%;
+    }
+
+    .column p {
+        font-size: 110%;
+    }
+
+    .row h4 {
+        width: 300px;
+    }
+
+    /*
+    opmaak voor elk product
+     */
+    .card {
+        padding: 5px;
+        max-width: 500px;
+    }
+
+    .card img {
+        width: 300px;
+        transform: scale(1.1);
+    }
+}
+
+
+/*
+67%
+ */
+@media screen and (min-width: 2600px ) {
+    /*
+   main en nav vergroten
+    */
+    .index-main {
+        font-size: 170%;
+    }
+
+    nav ul li {
+        font-size: 150%;
+    }
+
+    nav {
+        font-size: 130%;
+    }
+
+    .submenu ul {
+        font-size: 50%;
+        width: 150px;
+    }
+
+    /*
+    producten
+     */
+    .grid-main {
+        font-size: 150%;
+    }
+
+    /*
+    faq
+     */
+    dl * {
+        font-size: 150%;
+    }
+
+    /*
+    contact
+     */
+    .contactgegevens {
+        font-size: 115%;
+    }
+
+    .contactgegevens section p {
+        font-size: 105%;
+    }
+
+    /*
+    productdetail
+     */
+    .breadcrumbs__item {
+        font-size: 200%;
+    }
+
+    /*
+    personalisering
+     */
+    #formulier {
+        font-size: 130%;
+    }
+
+    input {
+        font-size: 90%;
+    }
+
+    #personalisering {
+        font-size: 120%;
+    }
+
+    #kiesJeProduct {
+        font-size: 100%;
+    }
+
+    #Verzenden {
+        font-size: 100%;
+        width: 7%;
+    }
+
+    .column p {
+        font-size: 120%;
+    }
+
+    .row h4 {
+        width: 400px;
+    }
+
+    /*
+    opmaak voor elk product
+     */
+    .card {
+        padding: 0;
+        max-width: 500px;
+    }
+
+    .card img {
+        width: 500px;
+        transform: scale(1);
     }
 
 }
+
+
+@media screen and (min-width: 3000px ) {
+    /*
+    main en nav vergroten
+     */
+    .index-main {
+        font-size: 220%;
+    }
+
+    nav ul li {
+        font-size: 250%;
+    }
+
+    .submenu ul {
+        font-size: 35%;
+        width: 300px;
+
+    }
+
+    /*
+    producten
+     */
+    .grid-main {
+        font-size: 200%;
+    }
+
+    /*
+    faq
+     */
+    dl * {
+        font-size: 200%;
+    }
+
+    /*
+    contact
+     */
+    .contactgegevens {
+        font-size: 110%;
+    }
+
+    .contactgegevens section p {
+        font-size: 110%;
+    }
+
+    /*
+    productdetail
+     */
+    .breadcrumbs__item {
+        font-size: 220%;
+    }
+
+    /*
+    personalisering
+     */
+    #formulier {
+        font-size: 200%;
+    }
+
+    input {
+        font-size: 70%;
+    }
+
+    #kleur {
+        transform: scale(2);
+    }
+
+    #QWERTY {
+        transform: scale(2);
+    }
+
+    #AZERTY {
+        transform: scale(2);
+    }
+
+    #personalisering {
+        font-size: 115%;
+    }
+
+    #kiesJeProduct {
+        font-size: 70%;
+    }
+
+    #info {
+        font-size: 55%;
+    }
+
+    #Verzenden {
+        font-size: 70%;
+        width: 7%;
+    }
+
+    /*
+    voor productoverzicht
+     */
+    .column p {
+        font-size: 120%;
+    }
+
+    .row h4 {
+        width: 400px;
+    }
+
+    /*
+    opmaak voor elk product
+     */
+    .card {
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    .card img {
+        width: 500px;
+        transform: scale(1.1);
+    }
+
+}
+
+

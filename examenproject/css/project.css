@@ -62,7 +62,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 29px;
 }
 
 nav ul li a {
@@ -568,7 +568,7 @@ input[type="radio"][id="resetGrootte"]:checked section .fullSize,
 input[type="radio"][id="resetGrootte"]:checked section .compact {
     display: inline-block;
 }
-
+input[type="radio"][id="resetLichten"]:checked section .RBG,
 input[type="radio"][id="resetLichten"]:checked section .RBG,
 input[type="radio"][id="resetLichten"]:checked section .blauwe,
 input[type="radio"][id="resetLichten"]:checked section .groene,
@@ -701,6 +701,15 @@ bevestings pagina
 
 @media screen and (max-width: 600px) {
 
+    .grid{
+        height: unset;
+        grid-template-rows: unset;
+
+    }
+    .index-grid{
+        height: unset;
+    }
+
     /*
     menu verticaal maken
      */
@@ -832,8 +841,20 @@ bevestings pagina
         margin-right: 0;
 
     }
-
-
+    .card {
+        padding: 0 0 0 46px;
+        text-align: center;
+        max-width: unset;
+    }
+    .personalisering-grid-main{
+        width: 96%
+    }
+    .gegevensProduct{
+        padding: 0;
+    }
+    .gegevensPersoon{
+        padding: 0;
+    }
 }
 
 @media screen and (min-width: 2000px ) {
@@ -1158,6 +1179,140 @@ bevestings pagina
      */
     .index-main {
         font-size: 220%;
+    }
+    .flex1 {
+        max-width: 1000px;
+    }
+    .flex2{
+        max-width: 1000px;
+    }
+    .flex3{
+        max-width: 1000px;
+    }
+
+    nav ul li {
+        font-size: 250%;
+    }
+
+    .submenu ul {
+        font-size: 35%;
+        width: 300px;
+
+    }
+
+    /*
+    producten
+     */
+    .grid-main {
+        font-size: 200%;
+    }
+
+    /*
+    faq
+     */
+    dl * {
+        font-size: 200%;
+    }
+
+    /*
+    contact
+     */
+    .contactgegevens {
+        font-size: 110%;
+    }
+
+    .contactgegevens section p {
+        font-size: 110%;
+    }
+
+    /*
+    productdetail
+     */
+    .breadcrumbs__item {
+        font-size: 220%;
+    }
+
+    /*
+    personalisering
+     */
+    #formulier {
+        font-size: 200%;
+    }
+
+    input {
+        font-size: 70%;
+    }
+
+    #kleur {
+        transform: scale(2);
+    }
+
+    #QWERTY {
+        transform: scale(2);
+    }
+
+    #AZERTY {
+        transform: scale(2);
+    }
+
+    #personalisering {
+        font-size: 115%;
+    }
+
+    #kiesJeProduct {
+        font-size: 70%;
+    }
+
+    #info {
+        font-size: 55%;
+    }
+
+    #Verzenden {
+        font-size: 70%;
+        width: 7%;
+    }
+
+    /*
+    voor productoverzicht
+     */
+    .column p {
+        font-size: 120%;
+    }
+
+    .row h4 {
+        width: 400px;
+    }
+
+    /*
+    opmaak voor elk product
+     */
+    .card {
+        padding: 10px;
+        max-width: 500px;
+    }
+
+    .card img {
+        width: 500px;
+        transform: scale(1.1);
+    }
+
+}
+
+@media screen and (min-width: 4000px ) {
+    /*
+    main en nav vergroten
+     */
+    .index-main {
+        font-size: 340%;
+    }
+    .flex1 {
+        max-width: 1000px;
+    }
+    .flex2{
+        max-width: 1000px;
+    }
+    .flex3{
+        max-width: 1000px;
     }
 
     nav ul li {

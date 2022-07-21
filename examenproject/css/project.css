@@ -568,6 +568,7 @@ input[type="radio"][id="resetGrootte"]:checked section .fullSize,
 input[type="radio"][id="resetGrootte"]:checked section .compact {
     display: inline-block;
 }
+
 input[type="radio"][id="resetLichten"]:checked section .RBG,
 input[type="radio"][id="resetLichten"]:checked section .RBG,
 input[type="radio"][id="resetLichten"]:checked section .blauwe,
@@ -699,14 +700,15 @@ bevestings pagina
     margin: 10px 0 10px 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 605px) {
 
-    .grid{
+    .grid {
         height: unset;
         grid-template-rows: unset;
 
     }
-    .index-grid{
+
+    .index-grid {
         height: unset;
     }
 
@@ -841,19 +843,191 @@ bevestings pagina
         margin-right: 0;
 
     }
+
     .card {
         padding: 0 0 0 46px;
         text-align: center;
         max-width: unset;
     }
-    .personalisering-grid-main{
+
+    .personalisering-grid-main {
         width: 96%
     }
-    .gegevensProduct{
+
+    .gegevensProduct {
         padding: 0;
     }
-    .gegevensPersoon{
+
+    .gegevensPersoon {
         padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .grid {
+        height: unset;
+        grid-template-rows: unset;
+
+    }
+
+    .index-grid {
+        height: unset;
+    }
+
+    /*
+    menu verticaal maken
+     */
+    nav ul li {
+        display: block;
+        padding: 0 90px;
+    }
+
+    /*
+  submenu naast de menu laten zetten
+   */
+    #filter {
+        float: none;
+    }
+
+    /*
+     index main grid items onder elkaar laten verschijnen
+     */
+    .flex1 {
+        display: inline-flex;
+        flex-direction: column;
+        max-width: 510px;
+        padding: 18px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .flex2 {
+        display: inline-flex;
+        flex-direction: column;
+        max-width: 510px;
+        padding: 18px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .flex3 {
+        display: inline-flex;
+        flex-direction: column;
+        max-width: 510px;
+        padding: 18px;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    /*
+    FAQ links laten verschijnen
+     */
+    dl {
+        text-align: left;
+    }
+
+    dt {
+        border: 1px solid black;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    dd {
+        margin: auto;
+    }
+
+    /*
+    contactgegevens onder elkaar laten zetten
+     */
+    .contactgegevens {
+        display: grid;
+        text-align: center;
+        grid-gap: 10px;
+        padding-right: 10px;
+        grid-template-areas:
+    'h2contactgegevens'
+    'naam'
+    'email'
+    'telefoon'
+    'adres';
+
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+    }
+
+    .contactgegevens section img {
+        max-height: 350px;
+    }
+
+    .detail-grid {
+        display: grid;
+        grid-template-areas:
+        'foto'
+        'omschrijving'
+        'eigenschappen';
+        grid-gap: 10px;
+    }
+
+    .detail-grid img {
+        width: 100%;
+    }
+
+    /*
+    formulier labels
+     */
+    #formulier .gegevensPersoon label {
+        width: 200px;
+    }
+
+    #formulier .gegevensProduct label {
+        width: 400px;
+    }
+
+    #naam {
+        padding-left: 0;
+        margin-right: 0;
+    }
+
+    #email {
+        padding-left: 0;
+        margin-right: 0;
+
+    }
+
+    #telefoon {
+        padding-left: 0;
+        margin-right: 0;
+
+    }
+
+    .card {
+        padding: 0 0 0 46px;
+        text-align: center;
+        max-width: unset;
+    }
+
+    .personalisering-grid-main {
+        width: 96%
+    }
+
+    .gegevensProduct {
+        padding: 0;
+    }
+
+    .gegevensPersoon {
+        padding: 0;
+    }
+
+    #formulier .gegevensPersoon input {
+        width: 271px;
     }
 }
 
@@ -862,7 +1036,19 @@ bevestings pagina
     main en nav vergroten
      */
     .index-main {
-        font-size: 120%;
+        font-size: 130%;
+    }
+
+    .flex1 {
+        max-width: 600px;
+    }
+
+    .flex2 {
+        max-width: 600px;
+    }
+
+    .flex3 {
+        max-width: 600px;
     }
 
     nav ul li {
@@ -1080,6 +1266,18 @@ bevestings pagina
         font-size: 170%;
     }
 
+    .flex1 {
+        max-width: 800px;
+    }
+
+    .flex2 {
+        max-width: 800px;
+    }
+
+    .flex3 {
+        max-width: 800px;
+    }
+
     nav ul li {
         font-size: 150%;
     }
@@ -1180,13 +1378,16 @@ bevestings pagina
     .index-main {
         font-size: 220%;
     }
+
     .flex1 {
         max-width: 1000px;
     }
-    .flex2{
+
+    .flex2 {
         max-width: 1000px;
     }
-    .flex3{
+
+    .flex3 {
         max-width: 1000px;
     }
 
@@ -1305,13 +1506,16 @@ bevestings pagina
     .index-main {
         font-size: 340%;
     }
+
     .flex1 {
         max-width: 1000px;
     }
-    .flex2{
+
+    .flex2 {
         max-width: 1000px;
     }
-    .flex3{
+
+    .flex3 {
         max-width: 1000px;
     }
 

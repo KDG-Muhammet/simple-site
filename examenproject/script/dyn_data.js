@@ -27,7 +27,7 @@ let producten_data = [
     ["Membrane keyboards", "Compact zwart Keyboard", "column card compact geenLichten normaal", "../media/membraneKeyboard/CompactZwartKeyboard.jpg", "productendetails/CompactZwartKeyboard.html", "Compact zwart Keyboard", "10 euro"],
     ["Membrane keyboards", "Ergonomic zwart keyboard", "column card ergonomic geenLichten fullSize", "../media/membraneKeyboard/ErgonomicZwartKeyboard.jpg", "productendetails/ErgonomicZwartKeyboard.html", "Ergonomic zwart keyboard", "19,99 euro"],
     ["Membrane keyboards", "Type machine keyboard", "column card fullSize geenLichten normaal", "../media/membraneKeyboard/TypeMachineStijlWitKeyboard.jpg", "productendetails/TypeMachineStijlWitKeyboard.html", "Type machine stijl wit keyboard", "30 euro"],
-    ["Membrane keyboards", "Keyboard Met Touchpad", "column card normaal fullSize geenLichten", "../media/membraneKeyboard/KeyboardMetTouchpad.jpg", "../media/membraneKeyboard/KeyboardMetTouchpad.jpg", "", "Keyboard Met Touchpad", "40 euro"],
+    ["Membrane keyboards", "Keyboard Met Touchpad", "column card normaal fullSize geenLichten", "../media/membraneKeyboard/KeyboardMetTouchpad.jpg", "", "Keyboard Met Touchpad", "40 euro"],
     ["Membrane keyboards", "Opvouwbaar keyboard", "column card opvouwbaar fullSize geenLichten", "../media/membraneKeyboard/OpvouwbaarKeyboard.jpg", "", "Opvouwbaar Keyboard", "35 euro"],
     ["Membrane keyboards", "Silicone Keyboard", "column card opvouwbaar fullSize geenLichten", "../media/membraneKeyboard/SiliconeKeyboard.jpg", "", "Silicone Keyboard", "4,99euro"],
 
@@ -44,5 +44,6 @@ let producten_data = [
     ["Gaming keyboards", "Draadloze Zwart Keyboard met blauw lichten", "column card fullSize blauwe normaal", "../media/gamingKeyboard/DraadlozeZwartBlauwKeyboard.jpg", "", "Draadloze Zwart Keyboard met blauw lichten", "35 euro"],
     ["Gaming keyboards", "Full size gaming keyboard", "column card fullSize RBG normaal", "../media/gamingKeyboard/FullSizeGamingKeyboard.jpg", "", "Full Size Gaming Keyboard", "40 euro"],
     ["Gaming keyboards", "Mini Gaming Keyboard Wit", "column card compact RBG normaal", "../media/gamingKeyboard/MiniGamingKeyboardWit.png", "", "Mini Gaming Keyboard Wit", "10 euro"],
-    ["Gaming keyboards", "Wit en zwart RBG keyboard", "column card fullSize RBG normaal", "../media/gamingKeyboard/WitZwartRBGKeyboard.jpg", "", "Wit Zwart RBG Keyboard", "24,99 euro"]
+    ["Gaming keyboards", "Wit en zwart RBG keyboard", "column card fullSize RBG normaal", "../media/gamingKeyboard/WitZwartRBGKeyboard.jpg", "", "Wit Zwart RBG Keyboard", "24,99 euro"],
+
 ];

@@ -22,8 +22,6 @@ class Product {
 
         return `<section class="${this.C}"> <a href="${this.link}"> <img src="${this.image}"  alt="${this.alt}"></a> <h4>${this.naam}</h4>  <p>${this.prijs}</p> </section> `;
     }
-
-
 }
 
 class Categorie {
@@ -252,8 +250,12 @@ function showCategorieen() {
     resetLichtenInput.setAttribute("checked", "")
 
     let reverse_label = document.createElement('button');
-    let r_secTitelText = document.createTextNode("reverse");
+    let reverse_text = document.createTextNode("reverse");
 
+    let Knop = document.createElement('a');
+    Knop.setAttribute("id","Dynamische")
+    Knop.setAttribute('href', "Producten.html");
+    let statische_label = document.createTextNode("Statische pagina");
 
     body.appendChild(main);
     main.appendChild(producten);
@@ -277,8 +279,11 @@ function showCategorieen() {
 
     // voor de filter te maken
     main.appendChild(reverse_label);
-    reverse_label.appendChild(r_secTitelText);
+    reverse_label.appendChild(reverse_text);
     reverse_label.addEventListener("click", reverse);
+
+    producten.appendChild(Knop);
+    Knop.appendChild(statische_label);
 
     producten.appendChild(filter)
     filter.appendChild(h3)
@@ -356,7 +361,6 @@ function init() {
             }
             categorieen[categorieen.length - 1].add(product);
         }
-
         console.log(categorieen);
         showCategorieen();
     } else {
@@ -372,7 +376,6 @@ function init() {
         }
         console.log(categorieen);
         showCategorieen();
-
     }
 }
 
@@ -384,7 +387,7 @@ function reverse() {
         let main = document.getElementsByClassName('panel grid-main')[0];
         body.removeChild(main);
 
-        for (let i = 0; i < 21; i++){
+        for (let i = 0; i < producten_data.length; i++){
             categorieen.shift()
         }
 
@@ -397,11 +400,20 @@ function reverse() {
         let main = document.getElementsByClassName('panel grid-main')[0];
         body.removeChild(main);
 
-        for (let i = 0; i < 21; i++){
+        for (let i = 0; i < producten_data.length; i++){
             categorieen.shift()
         }
         init();
 
     }
+}
+
+function createBtn() {
+    let main = document.getElementsByClassName("panel grid-main")
+    let Knop = document.createElement('a');
+    Knop.setAttribute('href', "Producten.html");
+    let statische_label = document.createTextNode("Statische pagina");
+    main.appendChild(Knop);
+    Knop.appendChild(statische_label);
 
 }

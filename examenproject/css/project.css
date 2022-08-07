@@ -932,7 +932,7 @@ bevestings pagina
     }
 
     .submenu:hover ul {
-        display: flex;
+        display: inline-grid;
         flex-direction: column;
         background-color: lightgray;
     }

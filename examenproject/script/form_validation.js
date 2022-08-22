@@ -44,7 +44,7 @@ function validateForm2(event) {
 function validatieEmail() {
     let inhoud = document.querySelector("#emailID").value;
     let feedback = document.querySelector("#emailfout");
-    const regex = new RegExp("[a-zA-Z1-9]\\.[a-zA-Z1-9]+@(student.)?kdg.be");
+    const regex = new RegExp("^([a-zA-Z1-9]+\\.[a-zA-Z1-9]+)*@(student.)?kdg.be$");
     if (regex.exec(inhoud) == null) {
         feedback.innerHTML = "Je ingevoerde e-mail behoort niet tot het KdG domein";
         return false;
@@ -53,4 +53,5 @@ function validatieEmail() {
     }
     return true;
 }
+
 

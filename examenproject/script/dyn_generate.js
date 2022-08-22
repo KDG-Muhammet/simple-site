@@ -5,22 +5,31 @@ let producten = [];
 
 class Product {
 
-    constructor(naam, prijs, image, alt, C, link) {
+    constructor(naam, prijs, image, alt, C, link, sup, eurosymbool) {
         this.naam = naam;
         this.prijs = prijs;
         this.image = image;
         this.alt = alt;
         this.C = C;
         this.link = link;
+        this.sup = sup;
+        this.eurosymbool = eurosymbool;
     }
 
     maakHtml() {
 
-        if (this.link === "") {
-            return `<section class="${this.C}">  <img src=${this.image}  alt="${this.alt}"> <h4>${this.naam}</h4>  <p>${this.prijs}</p> </section> `;
+        if (this.link === "" && this.sup === "") {
+            return `<section class="${this.C}"> <img src=${this.image} alt="${this.alt}"> <h4>${this.naam}</h4> <p>${this.prijs} ${this.eurosymbool} </p> </section> `;
         }
-
-        return `<section class="${this.C}"> <a href="${this.link}"> <img src="${this.image}"  alt="${this.alt}"></a> <h4>${this.naam}</h4>  <p>${this.prijs}</p> </section> `;
+        if (this.link !== "" && this.sup !== "") {
+            return `<section class="${this.C}"> <a href="${this.link}"> <img src="${this.image}" alt="${this.alt}"></a> <h4>${this.naam}</h4> <p>${this.prijs}<sup>${this.sup}</sup>${this.eurosymbool}</p> </section> `;
+        }
+        if (this.link !== "" && this.sup === "") {
+            return `<section class="${this.C}"> <a href="${this.link}"> <img src="${this.image}" alt="${this.alt}"></a> <h4>${this.naam}</h4> <p>${this.prijs}${this.eurosymbool}</p> </section> `;
+        }
+        if (this.link === "" && this.sup !== "") {
+            return `<section class="${this.C}"> <img src="${this.image}" alt="${this.alt}"></a> <h4>${this.naam}</h4> <p>${this.prijs}<sup>${this.sup}</sup>${this.eurosymbool}</p> </section> `;
+        }
     }
 }
 
@@ -60,6 +69,7 @@ function showCategorieen() {
     // voor de filter te maken
     let filter = document.createElement("section");
     filter.setAttribute("id", "filter");
+
     let h3 = document.createElement("h3")
     let h3titel = document.createTextNode("filter")
 
@@ -73,16 +83,19 @@ function showCategorieen() {
     let ergonomic = document.createElement("label")
     ergonomic.setAttribute("for", "ergonomic")
     ergonomic.setAttribute("class", "ergonomicLabel")
+    ergonomic.style.marginRight = "4.5px";
     let ergonomicLabel = document.createTextNode("ergonomic")
 
     let opvouwbaar = document.createElement("label")
     opvouwbaar.setAttribute("for", "opvouwbaar")
     opvouwbaar.setAttribute("class", "opvouwbaarLabel")
+    opvouwbaar.style.marginRight = "4.5px";
     let opvouwbaarLabel = document.createTextNode("opvouwbaar")
 
     let normaal = document.createElement("label")
     normaal.setAttribute("for", "normaal")
     normaal.setAttribute("class", "normaalLabel")
+    normaal.style.marginRight = "4.5px";
     let normaalLabel = document.createTextNode("normaal")
 
     let resetType = document.createElement("label")
@@ -100,19 +113,18 @@ function showCategorieen() {
     let compact = document.createElement("label")
     compact.setAttribute("for", "compact")
     compact.setAttribute("class", "compactLabel")
-    compact.style.marginRight = "4.8px";
+    compact.style.marginRight = "4.5px";
     let compactLabel = document.createTextNode("compact")
 
     let FullSize = document.createElement("label")
     FullSize.setAttribute("for", "FullSize")
     FullSize.setAttribute("class", "fullSizeLabel")
-    FullSize.style.marginRight = "4.8px";
+    FullSize.style.marginRight = "4.5px";
     let FullSizeLabel = document.createTextNode("full size")
 
     let resetGrootte = document.createElement("label")
     resetGrootte.setAttribute("for", "resetGrootte")
     resetGrootte.setAttribute("class", "resetGrootteLabel")
-    resetGrootte.style.marginRight = "4.8px";
     let resetGrootteLabel = document.createTextNode("reset grootte")
 
     //voor filter lichten
@@ -126,27 +138,32 @@ function showCategorieen() {
     let RBG = document.createElement("label")
     RBG.setAttribute("for", "RBG")
     RBG.setAttribute("class", "RBGlabel")
+    RBG.style.marginRight = "4.5px";
     let RBGLabel = document.createTextNode("RBG")
 
     let blauwe = document.createElement("label")
     blauwe.setAttribute("for", "blauwe")
     blauwe.setAttribute("class", "blauweLabel")
+    blauwe.style.marginRight = "4.5px";
     let blauweLabel = document.createTextNode("blauwe")
 
     let groene = document.createElement("label")
     groene.setAttribute("for", "groene")
     groene.setAttribute("class", "groeneLabel")
+    groene.style.marginRight = "4.5px";
     let groeneLabel = document.createTextNode("groene")
 
     let rode = document.createElement("label")
     rode.setAttribute("for", "rode")
     rode.setAttribute("class", "rodeLabel")
+    rode.style.marginRight = "4.5px";
     let rodeLabel = document.createTextNode("rode")
 
     let geenLichten = document.createElement("label")
     geenLichten.setAttribute("for", "geenLichten")
     geenLichten.setAttribute("class", "geenLichtenLabel")
-    let geenLichtenLabel = document.createTextNode("geenLichten")
+    geenLichten.style.marginRight = "4.5px";
+    let geenLichtenLabel = document.createTextNode("geen lichten")
 
     let resetLichten = document.createElement("label")
     resetLichten.setAttribute("for", "resetLichten")
@@ -252,15 +269,19 @@ function showCategorieen() {
     let reverse_label = document.createElement('button');
     let reverse_text = document.createTextNode("reverse");
 
+
     let Knop = document.createElement('a');
     Knop.setAttribute("id","Dynamische")
     Knop.setAttribute('href', "Producten.html");
-    let statische_label = document.createTextNode("Statische pagina");
+    let statische_label = document.createTextNode("Dynamische pagina");
+
 
     body.appendChild(main);
     main.appendChild(producten);
     producten.appendChild(h2)
     h2.appendChild(h2titel)
+
+
 
     // alle inputs van filter
     producten.appendChild(ergonomicInput)
@@ -278,12 +299,15 @@ function showCategorieen() {
     producten.appendChild(resetLichtenInput)
 
     // voor de filter te maken
-    main.appendChild(reverse_label);
-    reverse_label.appendChild(reverse_text);
-    reverse_label.addEventListener("click", reverse);
+
 
     producten.appendChild(Knop);
     Knop.appendChild(statische_label);
+
+    let ul = document.querySelector('ul')
+    ul.appendChild(reverse_label);
+    reverse_label.appendChild(reverse_text);
+    reverse_label.addEventListener("click", reverse);
 
     producten.appendChild(filter)
     filter.appendChild(h3)
@@ -294,6 +318,8 @@ function showCategorieen() {
     filter.appendChild(Type)
     Type.appendChild(h4Type)
     h4Type.appendChild(typeTitel)
+
+
 
     //labels van de filter type
     Type.appendChild(ergonomic)
@@ -354,7 +380,7 @@ function init() {
         let categorie = "";
         for (let i = 0; i < producten_data.length; i++) {
             j = (producten_data.length - 1) - i
-            let product = new Product(producten_data[j][1], producten_data[j][6], producten_data[j][3], producten_data[j][5], producten_data[j][2], producten_data[j][4]);
+            let product = new Product(producten_data[j][1], producten_data[j][6], producten_data[j][3], producten_data[j][5], producten_data[j][2], producten_data[j][4],producten_data[j][7],producten_data[j][8]);
             if (categorie !== producten_data[j][0]) {
                 categorie = producten_data[j][0];
                 categorieen.push(new Categorie(categorie));
@@ -367,7 +393,7 @@ function init() {
 
         let categorie = "";
         for (let i = 0; i < producten_data.length; i++) {
-            let product = new Product(producten_data[i][1], producten_data[i][6], producten_data[i][3], producten_data[i][5], producten_data[i][2], producten_data[i][4]);
+            let product = new Product(producten_data[i][1], producten_data[i][6], producten_data[i][3], producten_data[i][5], producten_data[i][2], producten_data[i][4],producten_data[i][7],producten_data[i][8]);
             if (categorie !== producten_data[i][0]) {
                 categorie = producten_data[i][0];
                 categorieen.push(new Categorie(categorie));
@@ -387,8 +413,9 @@ function reverse() {
         let main = document.getElementsByClassName('panel grid-main')[0];
         body.removeChild(main);
 
-        for (let i = 0; i < producten_data.length; i++){
+        for (let i = 0; i < 4; i++){
             categorieen.shift()
+
         }
 
             init();
@@ -400,7 +427,7 @@ function reverse() {
         let main = document.getElementsByClassName('panel grid-main')[0];
         body.removeChild(main);
 
-        for (let i = 0; i < producten_data.length; i++){
+        for (let i = 0; i < 4; i++){
             categorieen.shift()
         }
         init();

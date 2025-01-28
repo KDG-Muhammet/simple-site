@@ -1,1 +1,1 @@
-# simple site i made using html, cdd and javascript
+#simple site that I made using html, css and javascript
